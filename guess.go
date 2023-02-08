@@ -39,7 +39,7 @@ func main() {
 		fmt.Println("Oops, Your guess warslow.")
 	} else if guess > target {
 		fmt.Println("Oops, Your guess was high.")
-	} else if guess == target {
+	} else {
 		fmt.Print("Bigoo, Your guess is correct.")
 	}
 
