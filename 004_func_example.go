@@ -1,5 +1,6 @@
 package main
 
+// call the func in the go
 import (
 	"fmt"
 )
