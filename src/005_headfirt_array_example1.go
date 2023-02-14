@@ -36,4 +36,7 @@ func main() {
 		sum += number
 	}
 	fmt.Println("The total values is ", sum)
+
+	sampleCount := float64(len(arrayCharList))
+	fmt.Printf("The average values is %0.2f", sum/sampleCount)
 }
