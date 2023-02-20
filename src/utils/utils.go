@@ -1,11 +1,10 @@
-package main
+package utils
 
 import (
 	"fmt"
-	"utils"
 )
 
-func calculator(a float64, b float64, operator byte) float64 {
+func Calculator(a float64, b float64, operator byte) float64 {
 	var result float64
 
 	switch operator {
@@ -26,14 +25,4 @@ func calculator(a float64, b float64, operator byte) float64 {
 	}
 
 	return result
-}
-
-func main() {
-	a := 10.5
-	b := 0.5
-	fmt.Println("The result is", calculator(a, b, '+'))
-
-	result := utils.Calculator(a, b)
-	fmt.Println("The result is", result)
-
 }
