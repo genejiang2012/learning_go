@@ -1,24 +1,29 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 )
 
-func DivideZero(x float64) float64 {
-	err := recover("division by zeo")
+func DivideZero(first_number float64, second_number float64) float64 {
 
-	if err != nil {
-		fmt.Println("The result is not true!")
-		return nil
-	}
-	first_number := 10.0
-	second_number := 0.0
+	defer func() {
+		err := recover()
 
-	var res = first_number / second_number
+		if err != nil {
+			fmt.Println("err=", err)
+			fmt.Println("send the mail to ...")
+		}
+	}()
+
+	res := first_number / second_number
+
+	fmt.Println("The result is", res)
 	return res
+
 }
 
 func main() {
+	res := DivideZero(10.0, 0.0)
+	fmt.Println("The result is", res)
 
 }
