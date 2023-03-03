@@ -25,5 +25,4 @@ func main() {
 	fmt.Printf("The max values is %d, the average value is %d", maxValue, sum/count)
 
 	fmt.Printf("The max values is %d, the average value is %.2f", maxValue, float64(sum)/float64(len(intArray)))
-
 }
